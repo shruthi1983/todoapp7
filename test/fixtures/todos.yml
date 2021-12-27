@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: MyString
+  completed: 2021-12-27 11:35:14
+  status: 
+
+two:
+  task: MyString
+  completed: 2021-12-27 11:35:14
+  status: 

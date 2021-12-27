@@ -1,0 +1,15 @@
+
+
+  <ol>
+   	<% @todos.each do |todo| %>
+  	<li> <%= link_to todo.task,todo %> </li>
+  
+  
+  	   
+    <%= link_to "Edit",edit_todo_path(todo) %>
+    <%= link_to "Destroy", todo_path(todo), data: { turbo_method: :delete,turbo_confirm: "Are you sure?"} %>
+    
+    <% end %>
+
+  </ol>
+<%= link_to "New Todo",new_todo_path(@todo) %>

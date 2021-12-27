@@ -1,0 +1,15 @@
+
+<div class = "container">
+<%= form_with model: @todo do |f| %>
+  <div>
+	<%= f.label :task %><br>
+    <%= f.text_field :task %><br>
+  </div>
+  <div>
+	<%= f.label :created_on %><br>
+    <%= f.datetime_field :created_on %><br>
+  </div>
+  
+    <div> <%= f.submit %></div><br>
+<% end %>
+</div>
