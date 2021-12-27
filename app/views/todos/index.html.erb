@@ -2,12 +2,12 @@
 
   <ol>
    	<% @todos.each do |todo| %>
-  	<li> <%= link_to todo.task,todo %> </li>
+  	<li> <%= link_to todo.task,todo %> 
   
   
   	   
     <%= link_to '<i class="fa fa-pencil" aria-hidden="true"></i>'.html_safe,edit_todo_path(todo) %>
-    <%= link_to '<i class="fa fa-trash-o" aria-hidden="true"></i>'.html_safe, todo_path(todo), data: { turbo_method: :delete,turbo_confirm: "Are you sure?"} %>
+    <%= link_to '<i class="fa fa-trash-o" aria-hidden="true"></i>'.html_safe, todo_path(todo), data: { turbo_method: :delete,turbo_confirm: "Are you sure?"} %></li>
     
     <% end %>
 

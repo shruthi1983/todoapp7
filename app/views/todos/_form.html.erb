@@ -1,15 +1,16 @@
 
 <div class = "container">
 <%= form_with model: @todo do |f| %>
-  <div>
-	<%= f.label :task %><br>
-    <%= f.text_field :task %><br>
+  <div class= "form-group">
+	
+    <%= f.text_field :task ,class: 'form-control' , placeholder: 'Task'%><br>
   </div>
-  <div>
-	<%= f.label :created_on %><br>
-    <%= f.datetime_field :created_on %><br>
+  <div class= "form-group">
+	
+  <%= f.datetime_field :completed, class: 'form-control' ,placeholder: 'Created_date' %>
   </div>
-  
-    <div> <%= f.submit %></div><br>
+  <br>
+    <div class= "form-group">
+     <%= f.submit 'submit',class: 'btn btn-default btn-primary' %></div><br>
 <% end %>
 </div>

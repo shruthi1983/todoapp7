@@ -1,4 +1,11 @@
-<%= @todo.task %>
-<%= @todo.completed %>
-
+<ul> 
+ <li>
+ 	        <p> task:
+     <%= @todo.task %></p> <br>
+            <p>completed </p>
+     <%= @todo.completed %>  <br>
+     
+</li>
 <%= link_to 'back', todos_path %>
+
+</ul>
